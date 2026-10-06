@@ -1,0 +1,4 @@
+China provincial GeoJSON source:
+https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json
+
+Downloaded for local/offline rendering on 2026-10-04.

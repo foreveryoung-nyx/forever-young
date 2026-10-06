@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="刘杨的互动个人主页——一张可以探索的个人杂志封面。" />
+  <meta name="theme-color" content="#f1eee7" />
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/dachshund-favicon.png?v=2" />
+  <title>Forever Young</title>
+  <link rel="stylesheet" href="styles.css?v=20261006-26" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-pointer" aria-hidden="true">
+    <svg viewBox="0 0 34 42" focusable="false">
+      <path class="cursor-shadow" d="M3 2v30l8-8 7 16 7-3-7-15h14z" />
+      <path class="cursor-arrow" d="M3 2v30l8-8 7 16 7-3-7-15h14z" />
+    </svg>
+    <span class="cursor-spark">✦</span>
+  </div>
+
+  <header class="topbar">
+    <a class="brand magnetic" href="#top" aria-label="回到顶部">
+      <span>BACK TO TOP</span><span class="globe">↑</span>
+    </a>
+    <p class="topbar-note">Stay hungry, stay foolish.</p>
+    <div class="topbar-actions">
+      <div class="music-player is-playing" data-music-player>
+        <button class="music-toggle" type="button" aria-label="暂停背景音乐" aria-pressed="true">
+          <span class="turntable-icon" aria-hidden="true">
+            <span class="vinyl-disc"><i></i></span>
+            <span class="tonearm"></span>
+          </span>
+        </button>
+        <div class="music-panel" aria-label="背景音乐播放列表">
+          <header class="music-panel-head">
+            <span class="music-status">NOW SPINNING</span>
+            <strong class="current-track">正在准备播放…</strong>
+          </header>
+          <ol class="playlist" aria-label="四首背景音乐"></ol>
+          <div class="playback-console" aria-label="播放进度与切歌控制">
+            <div class="playback-timeline">
+              <div class="playback-progress" role="progressbar" aria-label="歌曲播放进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <span class="playback-progress-fill"></span>
+              </div>
+              <div class="playback-times" aria-live="off">
+                <time class="elapsed-time">0:00</time>
+                <time class="duration-time">--:--</time>
+              </div>
+            </div>
+            <div class="transport-controls">
+              <button type="button" data-previous-track aria-label="播放上一首">←</button>
+              <button class="panel-play-toggle" type="button" data-panel-play-toggle aria-label="暂停当前歌曲">Ⅱ</button>
+              <button type="button" data-next-track aria-label="播放下一首">→</button>
+            </div>
+          </div>
+          <div class="volume-control" aria-label="背景音乐音量控制">
+            <button class="volume-toggle" type="button" data-volume-toggle aria-label="静音背景音乐">VOL</button>
+            <div class="volume-steps" role="group" aria-label="选择音量">
+              <button class="volume-step" type="button" data-volume-level="0.2" aria-label="音量 20%"></button>
+              <button class="volume-step" type="button" data-volume-level="0.4" aria-label="音量 40%"></button>
+              <button class="volume-step" type="button" data-volume-level="0.6" aria-label="音量 60%"></button>
+              <button class="volume-step" type="button" data-volume-level="0.8" aria-label="音量 80%"></button>
+              <button class="volume-step" type="button" data-volume-level="1" aria-label="音量 100%"></button>
+            </div>
+            <span class="volume-readout" aria-live="polite">60%</span>
+          </div>
+          <div class="play-modes" aria-label="播放模式">
+            <button class="mode-button is-active" type="button" data-play-mode="order" aria-pressed="true">→ ORDER</button>
+            <button class="mode-button" type="button" data-play-mode="loop" aria-pressed="false">↻ LOOP</button>
+            <button class="mode-button" type="button" data-play-mode="shuffle" aria-pressed="false">⌁ SHUFFLE</button>
+          </div>
+        </div>
+        <audio id="background-music" preload="metadata"></audio>
+      </div>
+      <button class="menu-button magnetic" type="button" data-open-card="message">
+        <span class="menu-button-label">点我</span>
+        <span class="menu-click-icon" aria-hidden="true">
+          <svg viewBox="0 0 26 30" focusable="false">
+            <path class="menu-pointer-shape" d="M4 3v20l5.5-5.4 4.7 10.1 4.7-2.2-4.6-9.7h8.9z" />
+            <path class="menu-click-ray" d="M15 2v4M21 5l-3 3M24 11h-4" />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="giant-type" aria-hidden="true">YOUNG</div>
+
+      <div class="hero-copy">
+        <p class="eyebrow reveal">ZEAL · CREATIVITY · ENERGY</p>
+        <h1 id="hero-title" class="reveal">
+          <span class="name-cn" data-scramble="刘杨">刘杨</span>
+          <span class="name-en">LIU YANG</span>
+        </h1>
+        <p class="tagline reveal">Keep Real <span>☺</span></p>
+        <p class="intro reveal">祝我 有良好的睡眠 健康的身体<br />有前进的勇气 以及为自己兜底的能力</p>
+        <button class="explore-button magnetic reveal" type="button" data-scroll-to="chapters">
+          FOREVER YOUNG <span>↓</span>
+        </button>
+      </div>
+
+      <div class="portrait-wrap reveal" aria-label="刘杨个人照片">
+        <div class="portrait-stamp">GO FOR DREAM ★</div>
+        <div class="portrait-clip">
+          <span class="punk-word" aria-hidden="true">YOUNG!</span>
+          <img src="assets/liu-yang-cutout-v2.png" alt="刘杨戴粉色墨镜的个人照片" />
+          <span class="punk-tag" aria-hidden="true">dare to be different</span>
+        </div>
+        <div class="portrait-caption">life is journey</div>
+        <span class="doodle doodle-crown" aria-hidden="true">♕</span>
+        <span class="doodle doodle-star" aria-hidden="true">✦</span>
+      </div>
+
+      <button class="hotspot hotspot-profile magnetic reveal" type="button" data-open-card="profile">
+        <span>01</span> PROFILE
+      </button>
+      <button class="hotspot hotspot-hobbies magnetic reveal" type="button" data-open-card="hobbies">
+        <span>02</span> HOBBIES
+      </button>
+      <button class="hotspot hotspot-skills magnetic reveal" type="button" data-open-card="skills">
+        <span>03</span> SKILLS
+      </button>
+
+      <div class="scroll-note" aria-hidden="true"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="marquee" aria-label="个人关键词">
+      <div class="marquee-track">
+        <span>ENERGY</span><i>✦</i><span>SOCIAL</span><i>✦</i><span>CREATIVE</span><i>✦</i>
+        <span>KEEP REAL</span><i>✦</i><span>ENERGY</span><i>✦</i><span>SOCIAL</span><i>✦</i>
+        <span>CREATIVE</span><i>✦</i><span>KEEP REAL</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="chapters" id="chapters" aria-labelledby="chapters-title">
+      <div class="section-heading reveal">
+        <p>MY LITTLE UNIVERSE</p>
+        <h2 id="chapters-title" class="chapter-mascots" aria-label="彩虹心形和四只渐变变大的彩色小羊">
+          <img class="chapter-heart" src="assets/chapter-heart.png" alt="" />
+          <img class="chapter-sheep sheep-white" src="assets/chapter-sheep-white.png" alt="" />
+          <img class="chapter-sheep sheep-pink" src="assets/chapter-sheep-pink.png" alt="" />
+          <img class="chapter-sheep sheep-blue" src="assets/chapter-sheep-blue.png" alt="" />
+          <img class="chapter-sheep sheep-purple" src="assets/chapter-sheep-purple.png" alt="" />
+        </h2>
+      </div>
+
+      <div class="chapter-grid">
+        <button class="chapter chapter-cover chapter-travel chapter-interactive reveal" type="button" data-open-card="travel">
+          <span class="chapter-cover-label">WHERE I'VE WANDERED</span>
+        </button>
+        <button class="chapter chapter-cover chapter-concert chapter-interactive reveal" type="button" data-open-card="concert" aria-label="打开演唱会回忆墙：NIGHTS I'VE SUNG ALONG">
+          <span class="chapter-cover-label">NIGHTS I'VE SUNG ALONG</span>
+        </button>
+        <button class="chapter chapter-cover chapter-food chapter-interactive reveal" type="button" data-open-card="food" aria-label="打开美食照片日志：FLAVORS I'VE FALLEN FOR">
+          <span class="chapter-cover-label">FLAVORS I'VE FALLEN FOR</span>
+        </button>
+        <button class="chapter chapter-cover chapter-animals chapter-interactive reveal" type="button" data-open-card="animals" aria-label="打开喜欢的动物照片软木板：CREATURES THAT HAVE MY HEART">
+          <span class="chapter-cover-label">CREATURES THAT HAVE MY HEART</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <article class="message-window message-window-static reveal">
+        <span class="window-bar">
+          <b>FUTURE_SELF.EXE</b>
+          <span class="window-controls" aria-hidden="true">
+            <i class="window-control window-control-min"></i>
+            <i class="window-control window-control-max"></i>
+            <i class="window-control window-control-close"></i>
+          </span>
+        </span>
+        <span class="window-content">
+          <i>♥</i>
+          <span class="window-copy">
+            <strong class="window-copy-cn">祝我成为漂亮健康且很会赚钱的女性</strong>
+            <span class="window-copy-en">May I become a woman who is beautiful, healthy,<br />and skillful in the art of making wealth.</span>
+          </span>
+        </span>
+        <button class="window-button" type="button" data-open-card="future" aria-label="打开我的未来目标清单">OK</button>
+      </article>
+      <span class="pixel-heart" aria-hidden="true">♥</span>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-peek" tabindex="0" aria-describedby="contact-email">
+      <span class="contact-trigger"><span aria-hidden="true">✉</span> SAY HELLO</span>
+      <span class="contact-popover" role="tooltip">
+        <strong>FEEL FREE TO SAY HELLO</strong>
+        <span id="contact-email">foreveryoung.nyx@gmail.com</span>
+      </span>
+    </div>
+    <a href="#top">BACK TO TOP ↑</a>
+    <div class="love-action">
+      <button class="love-button" type="button" aria-live="polite">
+        <span class="love-label">SEND SOME LOVE</span>
+        <span class="love-icon" aria-hidden="true">♡</span>
+      </button>
+      <span class="love-burst" aria-hidden="true"></span>
+    </div>
+  </footer>
+
+  <div class="modal-layer" aria-hidden="true">
+    <div class="modal-backdrop" data-close-card></div>
+    <section class="info-card" role="dialog" aria-modal="true" aria-labelledby="card-title" tabindex="-1">
+      <header class="card-bar">
+        <span id="card-file">PROFILE.EXE</span>
+        <button type="button" data-close-card aria-label="关闭窗口">×</button>
+      </header>
+      <div class="card-body">
+        <p class="card-index" id="card-index">01 / ABOUT</p>
+        <h2 id="card-title">关于刘杨</h2>
+        <div id="card-content"></div>
+      </div>
+      <div class="card-footer">
+        <span>KEEP REAL ☺</span>
+        <button type="button" data-close-card>OK</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="assets/china-provinces.js?v=20261004-1"></script>
+  <script src="script.js?v=20261006-17"></script>
+</body>
+</html>

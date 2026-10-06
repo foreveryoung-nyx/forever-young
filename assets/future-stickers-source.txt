@@ -1,0 +1,18 @@
+Future-goal sticker sources
+
+Original assets generated with OpenAI image generation for this site:
+- future-sticker-travel.png
+- future-sticker-savings.png
+- future-sticker-cat.png
+- future-sticker-car.png
+
+OpenMoji color SVG assets, used under CC BY-SA 4.0:
+https://openmoji.org/
+https://github.com/hfg-gmuend/openmoji
+
+- future-sticker-checkup.svg (1FA79)
+- future-sticker-invest.svg (1F4C8)
+- future-sticker-balance.svg (1F353)
+- future-sticker-home.svg (1F3E0)
+- future-sticker-strong.svg (1F4AA)
+- future-sticker-english.svg (1F4AC)

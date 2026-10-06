@@ -1,0 +1,10 @@
+# Keep the music-player UI and interaction in the public site, but do not
+# publish the four locally stored commercial recordings.
+/assets/爱你但说不出口 - Karencici.mp3
+/assets/别问很可怕 - J.Sheon.mp3
+/assets/零距离的思念 - Tiny7.mp3
+/assets/疲惫的爱 - step.jad依加.mp3
+
+# Local browser-test artifacts are not part of the published website.
+/.playwright-cli/
+/output/
